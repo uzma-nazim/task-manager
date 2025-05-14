@@ -3,7 +3,7 @@ import { post } from './api'
 import type { TokenResponse } from '@/type/auth.types'
 import API_ENDPOINTS from './api-endpoints'
 export const refresh = createRefresh({
-  interval: 10 / 60, // 1 hour in secondsF
+  interval: 3600, // 1 hour in secondsF
   refreshApiCallback: async (param) => {
 
     try {
